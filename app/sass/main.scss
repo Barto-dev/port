@@ -1,0 +1,25 @@
+//general
+@import "mixins";
+@import "variables";
+@import "font";
+@import "general";
+@import "animation";
+@import "libs";
+
+//libs
+@import "blocks/swiper-settings";
+
+//header
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/site-navigation";
+@import "blocks/music";
+
+
+//main
+@import "blocks/main-container";
+
+//footer
+@import "blocks/main-footer";
+
+

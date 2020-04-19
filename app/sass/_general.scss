@@ -1,0 +1,45 @@
+
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+.main-page {
+  overflow-x: hidden;
+  min-width: 375px;
+  margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+

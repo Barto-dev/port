@@ -1,0 +1,15 @@
+{
+  "name": "swiper",
+  "homepage": "https://github.com/nolimits4web/Swiper",
+  "version": "5.3.7",
+  "_release": "5.3.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v5.3.7",
+    "commit": "d89a73cd63f3c0b0cfc7cb88f9e3120ec3f19930"
+  },
+  "_source": "https://github.com/nolimits4web/Swiper.git",
+  "_target": "^5.3.7",
+  "_originalSource": "swiper",
+  "_direct": true
+}
