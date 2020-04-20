@@ -16,14 +16,7 @@ function toggleMenu () {
   lineThree.classList.toggle("main-nav__line--cross-3");
 }
 
-toggleMenuButton.addEventListener("click", () => {
-  // siteNavigation.classList.toggle("site-navigation--show");
-  navigation.classList.toggle("main-nav--opened");
-  lineOne.classList.toggle("main-nav__line--cross-1");
-  lineTwo.classList.toggle("main-nav__line--fade-out");
-  lineThree.classList.toggle("main-nav__line--cross-3");
-
-});
+toggleMenuButton.addEventListener("click", toggleMenu);
 
 //Swiper
 var mySwiper = new Swiper ('.swiper-container', {
@@ -53,6 +46,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 for (let i = 0; i < menuButton.length; i++) {
   menuButton[i].addEventListener("click", function () {
     mySwiper.slideTo(i);
+    toggleMenu();
   })
 }
 
