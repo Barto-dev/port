@@ -1,13 +1,16 @@
 .swiper-container {
+  opacity: 1;
   width: auto;
-  //height: 100%;
+  transition: all 0.8s;
+  //background-color: rgba(255, 255, 255, 0.4);
+  //min-height: 90%;
 }
 
 .swiper-pagination {
   display: none;
 }
 
-.swiper-slide {
-  //height: 300px;
-  //background-color: rgba(255, 255, 255, 0.4);
+.swiper-container--fade {
+  opacity: 0.1;
 }
+

@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0,  minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Barto</title>
   <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body class="main-page">
+<div style="display: none">
+  <include src="app/img/sprite.svg"></include>
+</div>
+<div class="mobile-overflow-wrapper">
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-nav">
@@ -18,120 +23,182 @@
           <span class="main-nav__line main-nav__line--3"></span>
         </button>
         <ul class="site-navigation">
-          <li class="site-navigation__item">
-            <a href="" class="site-navigation__link">Главная</a>
+          <li class="site-navigation__item" id="1">
+            <button class="site-navigation__link">Главная</button>
           </li>
-          <li class="site-navigation__item">
-            <a href="" class="site-navigation__link">Обо мне</a>
+          <li class="site-navigation__item" id="2">
+            <button class="site-navigation__link">Обо мне</button>
           </li>
-          <li class="site-navigation__item">
-            <a href="" class="site-navigation__link">Навыки</a>
+          <li class="site-navigation__item" id="3">
+            <button class="site-navigation__link">Навыки</button>
           </li>
-          <li class="site-navigation__item">
-            <a href="" class="site-navigation__link">Работы</a>
+          <li class="site-navigation__item" id="4">
+            <button class="site-navigation__link">Работы</button>
           </li>
         </ul>
       </nav>
-        <div class="music">
-          <div class="">Вкл</div>
-          <div class="">Выкл</div>
-          <div class="">Иконка звука</div>
-        </div>
+      <div class="music">
+        <div class="">Вкл</div>
+        <div class="">Выкл</div>
+        <div class="">Иконка звука</div>
+      </div>
     </div>
   </header>
-  <main class="main-container swiper-container">
+  <main class="main-container">
     <h1 class="visually-hidden">Портфолио веб-разработчика Illi Melnychuk</h1>
 
-    <div class="main-container__wrapper swiper-wrapper">
+    <div class="swiper-container">
+      <div class="main-container__wrapper swiper-wrapper">
+        <section class="intro swiper-slide">
+          <h2 class="intro__title">Front-end developer</h2>
+          <p class="intro__desc">Вёрстка макетов любой сложности. Разработка лендингов, сайтов портфолио, корпоративных сайтов, блогов, каталогов товаров,
+интернет-магазинов и&nbsp;досок объявлений.Индивидуальный подход к каждой работе. Использование современных методик
+            и инструментов. Разработка легко поддерживаемых, отказоустойчивых и масштабируемых интерфейсов.</p>
+        </section>
 
-      <section class="intro swiper-slide">
-        <h2 class="intro__title">Front-end developer</h2>
-        <p class="intro__desc">Разрабатываю: лендинги, сайты-портфолио, корпоративные сайты, блоги, каталоги товаров,
-          интернет-магазины и доски объявлений.</p>
-      </section>
+        <section class="about-me swiper-slide">
+          <div class="about-me__img-container">
+            <img src="" alt="" class="about-me__photo">
+          </div>
+          <h2 class="about-me__title">Illia Melnychuk</h2>
+          <p class="about-me__desc">До&nbsp;веб-разработки я&nbsp;5&nbsp;лет занимался системным администрированием.
+Веб-разработкой занимаюсь около полугода. При разработке,
+            руководствуюсь
+            принципом
+            что веб
+должен быть доступнен для каждого, поэтому стараюсь активно использовать Aria атрибуты в&nbsp;своих
+проектах.Каждый день трачу несколько часов на изучение чего-то нового.
+          </p>
+        </section>
 
-      <section class="about-me swiper-slide">
-        <div class="about-me__img-container">
-          <img src="" alt="" class="about-me__photo">
-        </div>
-        <h2 class="about-me__title">Lorem ipsum.</h2>
-        <p class="about-me__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur cum deleniti dolorem expedita facere mollitia natus officia veritatis voluptate.</p>
-      </section>
+        <section class="technologies swiper-slide" id="about-me">
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Adaptive and responsive</div>
+                  <div class="skill-card__item skill-card__item--back">Семантическая, адаптивная и отзывчивая
+                    вёрстка. HTML 5</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">accessibility</div>
+                  <div class="skill-card__item skill-card__item--back">Доступная разметка согласно рекомендаций
+                    a11y</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Preprocessor</div>
+                  <div class="skill-card__item skill-card__item--back">В работе использую препроцессоры Sass и
+                    PostCSS</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+             <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Task-manager Gulp</div>
+                  <div class="skill-card__item skill-card__item--back">Для автоматизации и ускорения разработки
+                    использую Gulp</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Google speed optimization</div>
+                  <div class="skill-card__item skill-card__item--back">По завершению работы оптимизирую проект по
+                    Lighthouse</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Bem methodology</div>
+                  <div class="skill-card__item skill-card__item--back">При разработке использую БЭМ методологию</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+              <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Javascript and frameworks</div>
+                  <div class="skill-card__item skill-card__item--back">Активно использую JavaScript и
+                    фреймворки</div>
+                </div>
+              </div>
+            </li>
+            <li class="technologies__item">
+             <div class="skill-card">
+                <div class="skill-card__container">
+                  <div class="skill-card__item skill-card__item--front">Version control Git</div>
+                  <div class="skill-card__item skill-card__item--back">Система контроля версий Git</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-      <section class="my-work swiper-slide">
-        <ul class="my-work__list">
-          <li class="my-work__item">
-            <a href="" class="my-work__link">Lorem ipsum dolor.</a>
-          </li>
-          <li class="my-work__item">
-            <a href="" class="my-work__link">Lorem ipsum dolor.</a>
-          </li>
-          <li class="my-work__item">
-            <a href="" class="my-work__link">Lorem ipsum dolor.</a>
-          </li>
-        </ul>
-      </section>
+        <section class="my-work swiper-slide">
+          <ul class="my-work__list">
+            <li class="my-work__item">
+              <a href="" class="my-work__link">Lorem ipsum dolor.</a>
+            </li>
+            <li class="my-work__item">
+              <a href="" class="my-work__link">Lorem ipsum dolor.</a>
+            </li>
+            <li class="my-work__item">
+              <a href="" class="my-work__link">Lorem ipsum dolor.</a>
+            </li>
+          </ul>
+        </section>
 
-      <section class="technologies swiper-slide">
-        <ul class="technologies__list">
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">Lorem ipsum.</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-          <li class="technologies__item">
-            <a href="" class="technologies__link"></a>
-            <span class="technologies__desc">lorem2</span>
-          </li>
-        </ul>
-      </section>
-
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-     <div class="swiper-scrollbar"></div>
   </main>
 
   <footer class="main-footer">
     <ul class="social">
       <li class="social__item">
-        <a href="" class="social__link"></a>
+        <a href="" class="social__link">
+          <svg class="social__img" width="35" height="35">
+            <use xlink:href="#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="" class="social__link">
+          <svg class="social__img" width="35" height="35">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="" class="social__link">
+          <svg class="social__img" width="35" height="35">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
         <a href="" class="social__link"></a>
-      </li>
-      <li class="social__item">
-        <a href="" class="social__link"></a>
-      </li>
-      <li class="social__item">
-        <a href="" class="social__link"></a>
+        <svg class="social__img" width="35" height="35">
+          <use xlink:href="#icon-fb"></use>
+        </svg>
       </li>
     </ul>
   </footer>
+</div>
 
-
-  <script src="js/scripts.min.js"></script>
-  <script src="js/common.js"></script>
+<script src="js/scripts.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

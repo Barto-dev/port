@@ -6,6 +6,19 @@ let lineThree = document.querySelector(".main-nav__line--3");
 let siteNavigation = document.querySelector(".site-navigation");
 //массив с кнопками меню
 let menuButton = document.querySelectorAll(".site-navigation__link");
+//слайд
+let swiperContainer = document.querySelector(".swiper-container");
+//Карточка навыков
+let card = document.querySelectorAll(".skill-card");
+//Контейнер карточки навыков
+let cardContainer = document.querySelectorAll(".skill-card__container");
+
+//flipped skill card
+for (let i=0; i<card.length;i++) {
+  card[i].addEventListener("click", function () {
+    cardContainer[i].classList.toggle("flipped");
+  })
+}
 
 
 //Закрытие мобильного меню
@@ -14,6 +27,7 @@ function toggleMenu () {
   lineOne.classList.toggle("main-nav__line--cross-1");
   lineTwo.classList.toggle("main-nav__line--fade-out");
   lineThree.classList.toggle("main-nav__line--cross-3");
+  swiperContainer.classList.toggle("swiper-container--fade");
 }
 
 toggleMenuButton.addEventListener("click", toggleMenu);
@@ -24,7 +38,7 @@ var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
  // allowTouchMove:true,
  //    mousewheel: true,
- //    keyboard: true,
+    keyboard: true,
     direction: 'horizontal',
     // autoHeight: true,
     effect: "fade",

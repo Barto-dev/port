@@ -1,0 +1,13 @@
+
+
+.technologies__list {
+  @include list-reset;
+  min-height: 464px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.technologies__item {
+  width: 100%;
+}

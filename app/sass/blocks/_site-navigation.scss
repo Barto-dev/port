@@ -1,9 +1,9 @@
 .site-navigation {
   @include list-reset;
-  min-height: 620px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 620px;
 }
 
 .site-navigation--show {
@@ -17,15 +17,15 @@
 .site-navigation__link {
   //@include myOutline();
   display: block;
+  border: 0;
+  background-color: transparent;
+  width: 170px;
+  margin: 0 auto;
   font-size: 22px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  //Timeless
-  width: 170px;
-  margin: 0 auto;
 }
-
 
 
