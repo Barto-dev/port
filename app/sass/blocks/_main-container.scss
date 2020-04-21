@@ -1,4 +1,10 @@
 .main-container {
   padding: 0 30px;
-  //height: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .main-container {
+    padding: 0 50px;
+  }
 }

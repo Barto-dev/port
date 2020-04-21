@@ -40,19 +40,13 @@ var mySwiper = new Swiper ('.swiper-container', {
  //    mousewheel: true,
     keyboard: true,
     direction: 'horizontal',
-    // autoHeight: true,
+    autoHeight: true,
     effect: "fade",
     speed: 500,
     fadeEffect: { crossFade: true },
     // slidesPerView: 1,
 
     // If we need pagination
-    pagination: {
-      el: '.site-navigation',
-      type: 'custom',
-      bulletElement: '.site-navigation__link',
-      clickable: true
-    }
   });
 
 
@@ -63,5 +57,6 @@ for (let i = 0; i < menuButton.length; i++) {
     toggleMenu();
   })
 }
+
 
 

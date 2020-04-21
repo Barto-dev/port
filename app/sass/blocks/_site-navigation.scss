@@ -17,8 +17,6 @@
 .site-navigation__link {
   //@include myOutline();
   display: block;
-  border: 0;
-  background-color: transparent;
   width: 170px;
   margin: 0 auto;
   font-size: 22px;
@@ -26,6 +24,21 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
+@media (min-width: 992px) {
 
+  .site-navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: auto;
+    width: 80%;
+  }
+
+  .site-navigation__link {
+    width: auto;
+  }
+}

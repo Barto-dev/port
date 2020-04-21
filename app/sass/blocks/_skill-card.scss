@@ -1,42 +1,42 @@
 .skill-card {
-  width: 100%;
-  height: 50px;
   position: relative;
-  perspective: 800px;
+  width: 100%;
+  min-height: 50px;
   border-radius: 4px;
+  perspective: 800px;
 }
 
 .skill-card__container {
-  text-transform: uppercase;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  cursor: pointer;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
 }
 
 .skill-card__item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
+  background: linear-gradient(45deg, rgba(87, 111, 230, 1)  0%, #29abe2 100%);
   border-radius: 16px;
-  background: linear-gradient(45deg,  rgba(87,111,230,1)  0%, #29abe2 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  backface-visibility: hidden;
 }
 
 .skill-card__item--back {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  transform: rotateX(180deg);
   background: none;
   background-color: #777;
+  transform: rotateX(180deg);
 }
 
 .flipped {
@@ -44,3 +44,14 @@
 }
 
 
+@media (min-width: 768px) {
+
+  .skill-card {
+    min-height: 100px;
+  }
+
+  .skill-card__item--back {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

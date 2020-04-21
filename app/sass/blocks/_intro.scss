@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: auto;
-  padding-top: 30px;
+  //padding-top: 20px;
 }
 
 .intro__title {
@@ -17,4 +17,33 @@
   margin: 0;
   font-size: 18px;
   line-height: 32px;
+}
+
+@media (min-width: 576px) {
+
+  .intro {
+    padding-top: 40px;
+  }
+
+  .intro__title {
+    margin-bottom: 80px;
+    font-size: 30px;
+  }
+
+  .intro__desc {
+    font-size: 22px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .intro {
+    padding-top: 70px;
+    font-size: 36px;
+  }
+
+  .intro__title {
+    margin-bottom: 20px ;
+  }
 }

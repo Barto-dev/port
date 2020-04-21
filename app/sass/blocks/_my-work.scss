@@ -1,0 +1,75 @@
+.my-work {
+  //min-height: 874px !important;
+}
+
+.my-work__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.my-work__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.my-work__item {
+  width: 100%;
+  margin-bottom: 20px;
+  //background-image: url(../img/My-work/glacy-mob.jpg);
+  background: linear-gradient(45deg, rgba(87, 111, 230, 1)  0%, #29abe2 100%);
+  border-radius: 16px;
+}
+
+.my-work__img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.my-work__link {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-top: 2px solid #777;
+}
+
+@media (min-width: 576px) {
+
+  .my-work__title {
+    text-align: center;
+  }
+
+  .my-work__item {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .my-work {
+    padding-top: 70px;
+  }
+
+  .my-work__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .my-work__item {
+    width: 47%;
+    margin-bottom: 40px;
+  }
+
+  .my-work__title {
+    margin-bottom: 80px;
+  }
+}
