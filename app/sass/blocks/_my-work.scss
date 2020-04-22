@@ -73,3 +73,47 @@
     margin-bottom: 80px;
   }
 }
+
+@media (min-width: 1200px) {
+
+  .my-work {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .my-work__list {
+    justify-content: center;
+  }
+
+  .my-work__title {
+    margin-bottom: 40px;
+  }
+
+  .my-work__item {
+    width: 36%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+
+  .my-work {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .my-work__title {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .my-work__item {
+    width: 350px;
+  }
+
+  .my-work__list {
+    width: 1000px;
+  }
+}

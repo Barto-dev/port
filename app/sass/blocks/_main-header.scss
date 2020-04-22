@@ -3,3 +3,31 @@
 .main-header {
   min-height: 100px;
 }
+
+@media (min-width: 992px) {
+
+  .main-header {
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .main-header {
+    padding: 50px 100px;
+  }
+}
+
+
+@media (min-width: 1500px) {
+
+  .main-header {
+    margin-bottom: 250px;
+  }
+
+  .main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
